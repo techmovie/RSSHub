@@ -3274,6 +3274,12 @@
         "docs": "https://docs.rsshub.app/routes/anime#bangumi-fan-zu-ji-hua",
         "source": "/calendar",
         "target": "/bangumi/tv/calendar/today"
+      },
+      {
+        "title": "成员关注动画榜",
+        "docs": "https://docs.rsshub.app/routes/anime#bangumi-fan-zu-ji-hua",
+        "source": "/anime",
+        "target": "/bangumi/tv/followrank"
       }
     ]
   },
@@ -3333,6 +3339,12 @@
         "docs": "https://docs.rsshub.app/routes/anime#bangumi-fan-zu-ji-hua",
         "source": "/calendar",
         "target": "/bangumi/tv/calendar/today"
+      },
+      {
+        "title": "成员关注动画榜",
+        "docs": "https://docs.rsshub.app/routes/anime#bangumi-fan-zu-ji-hua",
+        "source": "/anime",
+        "target": "/bangumi/tv/followrank"
       }
     ]
   },
@@ -4207,6 +4219,19 @@
         "title": "MMDArchive 标签查询",
         "docs": "https://docs.rsshub.app/routes/picture#booru-mmdarchive-biao-qian-cha-xun",
         "source": "/index.php"
+      }
+    ]
+  },
+  "bossdesign.cn": {
+    "_name": "Boss 设计",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/design#boss-she-ji",
+        "source": [
+          "/:category?",
+          "/"
+        ]
       }
     ]
   },
@@ -6462,6 +6487,18 @@
       }
     ]
   },
+  "cma.cn": {
+    "_name": "中国气象局",
+    "weather": [
+      {
+        "title": "天气预报频道",
+        "docs": "https://docs.rsshub.app/routes/forecast#zhong-guo-qi-xiang-ju-tian-qi-yu-bao-pin-dao",
+        "source": [
+          "/web/*"
+        ]
+      }
+    ]
+  },
   "cmde.org.cn": {
     "_name": "国家药品监督管理局医疗器械技术审评中心",
     "www": [
@@ -6471,6 +6508,19 @@
         "source": [
           "/*cate"
         ]
+      }
+    ]
+  },
+  "cmpxchg8b.com": {
+    "_name": "cmpxchg8b",
+    "lock": [
+      {
+        "title": "文章 articles",
+        "docs": "https://docs.rsshub.app/routes/blog#cmpxchg8b",
+        "source": [
+          "/articles"
+        ],
+        "target": "/cmpxchg8b/articles"
       }
     ]
   },
@@ -8135,6 +8185,14 @@
         "docs": "https://docs.rsshub.app/routes/social-media#dou-ban",
         "source": "/jobs/intern",
         "target": "/jobs/intern"
+      }
+    ],
+    "book": [
+      {
+        "title": "读书论坛",
+        "docs": "https://docs.rsshub.app/routes/social-media#dou-ban",
+        "source": "/:id/discussion",
+        "target": "/:id/discussion"
       }
     ]
   },
@@ -10347,10 +10405,24 @@
         "title": "分类",
         "docs": "https://docs.rsshub.app/routes/shopping#zheng-ban-zhong-guo-fen-lei",
         "source": [
-          "/category/:category",
-          "/"
+          "/category/:id"
         ],
-        "target": "/getitfree/:category?"
+        "target": "/getitfree/category/:id"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/routes/shopping#zheng-ban-zhong-guo-biao-qian",
+        "source": [
+          "/tag/:id"
+        ],
+        "target": "/getitfree/tag/:id"
+      },
+      {
+        "title": "搜索",
+        "docs": "https://docs.rsshub.app/routes/shopping#zheng-ban-zhong-guo-sou-suo",
+        "source": [
+          "/"
+        ]
       }
     ]
   },
@@ -11392,6 +11464,28 @@
       }
     ]
   },
+  "moa.gov.cn": {
+    "_name": "中华人民共和国农业农村部",
+    ".": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-yu-bu-xin-wen",
+        "source": [
+          "/"
+        ],
+        "target": "/gov/moa/:suburl"
+      }
+    ],
+    "zdscxx": [
+      {
+        "title": "数据",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-yu-bu",
+        "source": [
+          "/nyb/pc/messageView.jsp"
+        ]
+      }
+    ]
+  },
   "moe.gov.cn": {
     "_name": "中华人民共和国教育部",
     ".": [
@@ -11843,6 +11937,13 @@
         "target": "/gov/news/gwy"
       },
       {
+        "title": "政策",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-guo-zheng-fu-wang-zheng-ce",
+        "source": [
+          "/zhengce/:category*"
+        ]
+      },
+      {
         "title": "最新政策",
         "docs": "https://docs.rsshub.app/routes/government#zhong-guo-zheng-fu-wang",
         "source": [
@@ -12100,6 +12201,13 @@
         "docs": "https://docs.rsshub.app/routes/shopping#guang-diu",
         "source": [
           "/cheaps.php"
+        ]
+      },
+      {
+        "title": "关键字搜索",
+        "docs": "https://docs.rsshub.app/routes/shopping#guang-diu",
+        "source": [
+          "/search.php"
         ]
       }
     ]
@@ -13463,6 +13571,18 @@
         "source": [
           "/category/*path",
           "/"
+        ]
+      }
+    ]
+  },
+  "ianspriggs.com": {
+    "_name": "Ian Spriggs",
+    ".": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/blog#ian-spriggs-category",
+        "source": [
+          "/:category"
         ]
       }
     ]
@@ -16391,7 +16511,7 @@
       }
     ]
   },
-  "kemono.party": {
+  "kemono.su": {
     "_name": "Kemono",
     ".": [
       {
@@ -16917,6 +17037,28 @@
           "/novel/:id"
         ],
         "target": "/linovellib/novel/:id"
+      }
+    ]
+  },
+  "liquipedia.net": {
+    "_name": "Liquipedia",
+    ".": [
+      {
+        "title": "Counter Strike Match Results",
+        "docs": "https://docs.rsshub.app/routes/game#liquipedia",
+        "source": [
+          "/counterstrike/:id/Matches",
+          "/dota2/:id"
+        ],
+        "target": "/liquipedia/counterstrike/matches/:id"
+      },
+      {
+        "title": "Dota2 战队最近比赛结果",
+        "docs": "https://docs.rsshub.app/routes/game#liquipedia",
+        "source": [
+          "/dota2/:id"
+        ],
+        "target": "/liquipedia/dota2/matches/:id"
       }
     ]
   },
@@ -19151,13 +19293,19 @@
       {
         "title": "分类",
         "docs": "https://docs.rsshub.app/routes/finance#mei-jing-wang",
-        "source": "/",
-        "target": "/nbd"
+        "source": [
+          "/",
+          "/columns/:id?"
+        ],
+        "target": "/nbd/:id?"
       },
       {
         "title": "重磅原创",
         "docs": "https://docs.rsshub.app/routes/finance#mei-jing-wang",
-        "source": "/",
+        "source": [
+          "/",
+          "/columns/332"
+        ],
         "target": "/nbd/daily"
       }
     ]
@@ -24053,6 +24201,25 @@
         "docs": "https://docs.rsshub.app/routes/design#shopping-design",
         "source": "/post",
         "target": "/shoppingdesign/posts"
+      }
+    ]
+  },
+  "showstart.com": {
+    "_name": "秀动网",
+    "www": [
+      {
+        "title": "演出更新",
+        "docs": "https://docs.rsshub.app/routes/shopping#xiu-dong-wang-yan-chu-geng-xin",
+        "source": [
+          "/event/list"
+        ]
+      },
+      {
+        "title": "演出搜索",
+        "docs": "https://docs.rsshub.app/routes/shopping#xiu-dong-wang-yan-chu-sou-suo",
+        "source": [
+          "/event/list"
+        ]
       }
     ]
   },
@@ -29396,10 +29563,90 @@
         "title": "数字媒体",
         "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-shu-zi-mei-ti",
         "source": [
-          "/:id",
-          "/"
+          "/:id"
         ],
         "target": "/xmnn/epaper/:id"
+      }
+    ],
+    "news": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/:category*"
+        ]
+      },
+      {
+        "title": "厦门新闻发布",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/xmxwfb"
+        ],
+        "target": "/xmnn/news/xmxwfb"
+      },
+      {
+        "title": "厦门新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/xmxw"
+        ],
+        "target": "/xmnn/news/xmxw"
+      },
+      {
+        "title": "本网快报",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/bwkb"
+        ],
+        "target": "/xmnn/news/bwkb"
+      },
+      {
+        "title": "厦门网眼",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/xmwy"
+        ],
+        "target": "/xmnn/news/xmwy"
+      },
+      {
+        "title": "福建新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/fjxw"
+        ],
+        "target": "/xmnn/news/fjxw"
+      },
+      {
+        "title": "国内新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/gnxw"
+        ],
+        "target": "/xmnn/news/gnxw"
+      },
+      {
+        "title": "国际新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/gjxw"
+        ],
+        "target": "/xmnn/news/gjxw"
+      },
+      {
+        "title": "台海新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/thxw"
+        ],
+        "target": "/xmnn/news/thxw"
+      },
+      {
+        "title": "社会新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/shxw"
+        ],
+        "target": "/xmnn/news/shxw"
       }
     ]
   },
